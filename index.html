@@ -8,9 +8,58 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fontawsome file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>Project with Javascript</title>
+    <title>Project with Javascript by javascript function</title>
 </head>
-<body>
+<body class="bg-slate-800 font-thin text-yellow-100">
+
+
+    <h1 class="text-center text-3xl font-bold my-10">Baper <span class="text-red-500 underline">Bank</span></h1>
+
+    <div class="w-4/5 mx-auto my-10">
+
+
+        <section>
+            <div class="grid grid-cols-3 text-center gap-5">
+                <div class="bg-green-500 rounded px-5 py-5">
+                    <h1 class="text-2xl font-bold">Deposit Money</h1>
+                    <h2 class="font-bold">$ <span id="DTotalMoney">00</span></h2>
+                </div>
+                <div class="bg-yellow-500 rounded px-5 py-5">
+                    <h1 class="text-2xl font-bold">Withdrow Money</h1>
+                    <h2 class="font-bold">$ <span id="pWithdrow-money">00</span></h2>
+                </div>
+                <div class="bg-purple-500 rounded px-5 py-5">
+                    <h1 class="text-2xl font-bold">Total Balance</h1>
+                    <h2 class="font-bold">$ <span id="totalCMoney">100</span></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="my-10">
+
+            <div class="grid grid-cols-2 gap-5">
+
+                <div class="bg-slate-900 p-10 rounded-md">
+                    <h1 class="text-2xl font-bold text-yellow-400">Deposit Money</h1>
+                    <input type="number" id="Deposit-field" placeholder="Input your deposit money" class="block px-5 py-2 bg-transparent border border-stone-500 rounded-md my-3 w-4/5 outline-none">
+                    <button class="px-4 py-2 bg-slate-500 rounded-md text-black font-bold hover:bg-slate-600" onclick="deposit()">Deposit</button>
+                </div>
+
+                <div class="bg-green-900 p-10 rounded-md">
+                    <h1 class="text-2xl font-bold text-yellow-400">Withdraw Money</h1>
+                    <input type="number" placeholder="Input your withdrow money" class="block px-5 py-2 bg-transparent border border-stone-500 rounded-md my-3 w-4/5 outline-none" id="withdrow-Filed">
+                    <button class="px-4 py-2 bg-slate-400 rounded-md text-black font-bold hover:bg-slate-500" onclick="withdrow()">Withdrow</button>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+
+    </div>
 
 
 
@@ -58,19 +107,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <!-- Javascript file -->
+    <script src="js/function.js"></script>
     <script src="js/javascript.js"></script>
 </body>
 </html>
